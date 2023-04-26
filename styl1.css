@@ -23,18 +23,23 @@ footer {
     background-color: #EFEFEF;
     width: 55%;
     height: 150px;
+	float: left;
 }
 
 .lewy2 {
     background-color: #EFEFEF;
     width: 55%;
     height: 300px;
+	float: left;
+
 }
 .prawy {
 background-color: #4FB3BF;
 width: 45%;
 height: 450px;
 text-align: center;
+float: right;
+
 }
 img {
     box-shadow: 10px 10px 7px DimGray;
