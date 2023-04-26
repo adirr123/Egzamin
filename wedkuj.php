@@ -16,7 +16,10 @@
     <aside class="lewy1">
         <h3>Ryby zamieszkujące rzeki</h3>
         <ol>
+<?php
+$con = mysqli_connect('localhost', 'root','','wedkowanie');
 
+?>
         </ol>
     </aside>
 
