@@ -19,7 +19,7 @@
 <?php
 $con = mysqli_connect('localhost', 'root','','wedkowanie');
 $q1 = "SELECT ryby.nazwa, lowisko.akwen, lowisko.wojewodztwo FROM 
-ryby INNER JOIN lowisko ON ryb.id = lowisko.Ryby_id WHERE lowisko.rodzaj = 3;";
+ryby INNER JOIN lowisko ON ryby.id = lowisko.Ryby_id WHERE lowisko.rodzaj = 3;";
 $res1 = mysqli_query($con, $q1);
 while ($row = mysqli_fetch_array($res1)) {
     echo "<li>$row[0] pływa w rzece $row[1], $row[2]</li>";
