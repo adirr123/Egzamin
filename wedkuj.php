@@ -8,7 +8,31 @@
     <title>Wędkowanie</title>
 </head>
 <body>
-    <header> Portal dla wędkarzy </header>
     
+    <header>
+        <h1>Portal dla wędkarzy</h1>
+    </header>
+
+
+    <aside class="lewy1">
+        <h3>Ryby zamieszkujące rzeki</h3>
+        <ol>
+
+        </ol>
+    </aside>
+
+    <main class="lewy2">
+        <h3>Ryby drapieżne naszych wód</h3>
+    </main>
+
+    <nav class="prawy">
+        <img src="ryba1.jpg" alt="Sum">
+        <a href="kwerendy.txt">Pobierz kwerendy</a>
+    </nav>
+
+    <footer>
+        <p>Stronę wykonał: 00000000000</p>
+    </footer>
+
 </body>
 </html>
