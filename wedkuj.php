@@ -18,10 +18,10 @@
         <ol>
 <?php
 $con = mysqli_connect('localhost', 'root','','wedkowanie');
-$q1 = "SELECT ryby.nazwa, lowisko.akwen, lowisko.wojewodztwo FROM 
+$sql1 = "SELECT ryby.nazwa, lowisko.akwen, lowisko.wojewodztwo FROM 
 ryby INNER JOIN lowisko ON ryby.id = lowisko.Ryby_id WHERE lowisko.rodzaj = 3;";
-$res1 = mysqli_query($con, $q1);
-while ($row = mysqli_fetch_array($res1)) {
+$sq1 = mysqli_query($con, $sql1);
+while ($row = mysqli_fetch_array($sq1)) {
     echo "<li>$row[0] pływa w rzece $row[1], $row[2]</li>";
 } 
 ?>
@@ -42,9 +42,9 @@ while ($row = mysqli_fetch_array($res1)) {
 					<th>Występowanie</th>
 				</tr>
 				<?php
-				$q2 = "SELECT id, nazwa, wystepowanie FROM ryby WHERE styl_zycia = 1;";
-				$res2 = mysqli_query($con, $q2);
-				while ($row = mysqli_fetch_array($res2)) {
+				$sql2 = "SELECT id, nazwa, wystepowanie FROM ryby WHERE styl_zycia = 1;";
+				$sq2 = mysqli_query($con, $sql2);
+				while ($row = mysqli_fetch_array($sq2)) {
 					echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td></tr>";
 				}
 				mysqli_close($con);
