@@ -35,6 +35,21 @@ while ($row = mysqli_fetch_array($res1)) {
 
     <main class="lewy2">
         <h3>Ryby drapieżne naszych wód</h3>
+        <table>
+				<tr>
+					<th>L.p.</th>
+					<th>Gatunek</th>
+					<th>Występowanie</th>
+				</tr>
+				<?php
+				$q2 = "SELECT id, nazwa, wystepowanie FROM ryby WHERE styl_zycia = 1;";
+				$res2 = mysqli_query($con, $q2);
+				while ($row = mysqli_fetch_array($res2)) {
+					echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td></tr>";
+				}
+				mysqli_close($con);
+				?>
+			</table>
     </main>
 
     <footer>
