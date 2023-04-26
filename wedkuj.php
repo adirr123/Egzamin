@@ -19,6 +19,7 @@
 <?php
 $con = mysqli_connect('localhost', 'root','','wedkowanie');
 
+
 ?>
         </ol>
     </aside>
